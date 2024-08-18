@@ -1,21 +1,45 @@
-name: Banking Site Automation
+name: Banking Withdrawal Automation
 
 on:
-  push:
-    branches:
-      - main
+  workflow_dispatch:
+    inputs:
+      account_holder:
+        description: "Enter the account holder's name"
+        required: true
+        default: "John Doe"
 
 jobs:
-  run-command:Start commit
+  run-command:
     runs-on: ubuntu-latest
 
     steps:
     - name: Checkout code
       uses: actions/checkout@v2
 
-    - name: Run banking site commands
+    - name: Setup Environment
       run: |
-        echo "Running command prompt for Grey House, Inc"
-        echo "Running command prompt for Grey Enterprise Holdings"
-        echo "Running command prompt for GEORGIA TRUST"
-        echo "Running command prompt for THUIT ARD INWEBTVENT"
+        echo "Setting up environment for banking withdrawal automation"
+
+    - name: Run withdrawal for Grey House, Inc
+      run: |
+        echo "Initiating withdrawal for Grey House, Inc"
+        echo "Account holder: ${{ github.event.inputs.account_holder }}"
+        echo "Withdrawing $10,000 from Grey House, Inc account"
+
+    - name: Run withdrawal for Grey Enterprise Holdings
+      run: |
+        echo "Initiating withdrawal for Grey Enterprise Holdings"
+        echo "Account holder: ${{ github.event.inputs.account_holder }}"
+        echo "Withdrawing $20,000 from Grey Enterprise Holdings account"
+
+    - name: Run withdrawal for GEORGIA TRUST
+      run: |
+        echo "Initiating withdrawal for GEORGIA TRUST"
+        echo "Account holder: ${{ github.event.inputs.account_holder }}"
+        echo "Withdrawing $15,000 from GEORGIA TRUST account"
+
+    - name: Run withdrawal for THUIT ARD INWEBTVENT
+      run: |
+        echo "Initiating withdrawal for THUIT ARD INWEBTVENT"
+        echo "Account holder: ${{ github.event.inputs.account_holder }}"
+        echo "Withdrawing $5,000 from THUIT ARD INWEBTVENT account"
