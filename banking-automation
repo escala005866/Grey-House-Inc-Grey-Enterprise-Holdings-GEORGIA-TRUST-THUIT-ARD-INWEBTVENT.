@@ -1,0 +1,21 @@
+name: Banking Site Automation
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  run-command:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Run banking site commands
+      run: |
+        echo "Running command prompt for Grey House, Inc"
+        echo "Running command prompt for Grey Enterprise Holdings"
+        echo "Running command prompt for GEORGIA TRUST"
+        echo "Running command prompt for THUIT ARD INWEBTVENT"
