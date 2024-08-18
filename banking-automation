@@ -6,7 +6,7 @@ on:
       - main
 
 jobs:
-  run-command:
+  run-command:Start commit
     runs-on: ubuntu-latest
 
     steps:
@@ -14,7 +14,7 @@ jobs:
       uses: actions/checkout@v2
 
     - name: Run banking site commands
-      run: |Start commit
+      run: |
         echo "Running command prompt for Grey House, Inc"
         echo "Running command prompt for Grey Enterprise Holdings"
         echo "Running command prompt for GEORGIA TRUST"
