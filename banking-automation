@@ -8,7 +8,7 @@
 </head>
 <body>
     <header class="header">
-        <img src="logo1.png" alt="Georgia Trust Logo" class="main-logo">
+        <img src="Screenshot_20240818_024935_Gallery.jpg" alt="Georgia Trust Logo" class="main-logo"
         <nav>
             <ul class="nav-links">
                 <li><a href="#">Accounts</a></li>
@@ -39,7 +39,7 @@
     </main>
 
     <footer>
-        <img src="logo2.png" alt="Grey Enterprises Logo" class="sub-logo">
+        <img src="Screenshot_20241201-044045~2.png" alt="Grey Enterprises Logo" class="sub-logo">
         <p>© Grey Enterprises Holdings Inc.</p>
     </footer>
 </body>
